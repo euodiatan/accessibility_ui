@@ -1,82 +1,42 @@
+// Import necessary React utilities and components.
 import React from 'react';
 import { useCustomisation } from './CustomisationContext';
+//If you want to customise new elements, import them here.
 import { Button, Text } from '@chakra-ui/react';
 
-
-export const CustomCancelButton = ({ children, onClick, id, isDisabled }) => {
+// CustomButton Component
+// This component creates a button with customisable size and color.
+// The customisation settings are fetched from the CustomisationContext.
+export const CustomButton = ({ children }) => {
+  // Fetch the button size and color from the customisation context.
   const { buttonSize } = useCustomisation();
-  const { fontSize } = useCustomisation();
-  const { cancelButtonColor } = useCustomisation();
-  const { fontColor } = useCustomisation();
-  
-
+  const { buttonColor } = useCustomisation();
 
   return (
     <Button
-    size={buttonSize}
-    paddingX='6'
-    paddingY='4'
-    background={cancelButtonColor}
-    textColor='white'
-    variant='solid'
-    w='80%'
-    display='flex'
-    alignItems='center'
-    mb={8}
-    onClick={onClick}
-    id={id}
-    isDisabled={isDisabled}
-    
+      size={buttonSize} // Set the button size based on the customisation setting.
+      background={buttonColor} // Set the button background color based on the customisation setting.
     >
       {children}
-      <CloseIcon color={fontColor} mr={2} fontSize={fontSize}/>
-       <CustomText>Cancel</CustomText>
+      {/* Embed the CustomText component to display the button's name. */}
+      {/* You can modify this part to customise the button's content further. */}
+      <CustomText>Button Name</CustomText>
     </Button>
   );
 };
 
-export const CustomServeButton = ({ children, onClick, id, isDisabled }) => {
-  const { color, isDarkMode } = useCustomisation();
-  const backgroundColor = isDarkMode ? 'black' : color;
-  const { buttonSize } = useCustomisation();
+// CustomText Component
+// This component creates a text element with customisable font size and color.
+// The customisation settings are fetched from the CustomisationContext.
+export const CustomText = ({ children }) => {
+  // Fetch the font size and color from the customisation context.
   const { fontSize } = useCustomisation();
-  const { serveButtonColor } = useCustomisation();
   const { fontColor } = useCustomisation();
 
-  return (
-    <Button
-    size={buttonSize}
-    paddingX='6'
-    paddingY='4'
-    background={serveButtonColor}
-    textColor='white'
-    variant='solid'
-    w='80%'
-    display='flex'
-    alignItems='center'
-    mb={8}
-    onClick={onClick}
-    id={id}
-    isDisabled={isDisabled}
-    
-    >
-      {children}
-      <CheckIcon mr={2} color={fontColor} fontSize={fontSize} style={{ marginRight: '5px' }} />
-      <CustomText>Serve</CustomText>
-    </Button>
-  );
-};
- 
-export const CustomText = ({ children, as, mb, key }) => {
-  const { fontSize } = useCustomisation();
-  const { fontColor } = useCustomisation();
   return (
     <Text
-    fontSize={fontSize}
-    color={fontColor}
-    as={as}
-    mb={mb}
-    key={key}
+      fontSize={fontSize} // Set the font size based on the customisation setting.
+      color={fontColor} // Set the font color based on the customisation setting.
     >
       {children}
     </Text>
