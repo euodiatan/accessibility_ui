@@ -1,4 +1,3 @@
-// Import necessary React hooks and utilities.
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
 // Create a context for customisation settings.
