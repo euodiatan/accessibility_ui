@@ -36,7 +36,10 @@ npm install accessibility_ui
 
 # Ensure you have the required peer dependencies
 npm install react@^18.2.0 react-dom@^18.2.0
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
+
+**The accessibility_ui module will be found inside your node_modules folder.**
 
 ## 🚀 Usage
 
