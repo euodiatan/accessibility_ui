@@ -61,6 +61,11 @@ Place the `CustomisationPage` component wherever you want the customization inte
 Incorporate the `CustomButton` and `CustomText` components into your code as needed. They will adapt their appearance based on the user's customization settings.
 Feel free to add more components you would like the end-user to be able to customise.
 
+<img width="151" alt="image" src="https://github.com/euodiatan/accessibility_ui/assets/91814774/8c64533e-4ed3-4f22-8007-a73167af5ee9">
+<img width="344" alt="image" src="https://github.com/euodiatan/accessibility_ui/assets/91814774/8a0ac15e-46e8-49cc-8ed3-1fd73b6656ff">
+<img width="151" alt="image" src="https://github.com/euodiatan/accessibility_ui/assets/91814774/2abd659f-7e8a-46cf-a8ce-e16b97966f19">
+
+
 **4. Extend and Customize**:
 Feel free to extend existing components or introduce new customizable elements to better suit your application's needs.
 
