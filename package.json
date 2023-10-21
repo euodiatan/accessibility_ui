@@ -11,8 +11,8 @@
     "url": "git+https://github.com/euodiatan/accessibility_ui.git"
   },
   "keywords": [
-    "chakraUI",
     "react",
+    "css",
     "accessibility",
     "customisation",
     "settings"
@@ -25,11 +25,6 @@
   "homepage": "https://github.com/euodiatan/accessibility_ui#readme",
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@chakra-ui/react": "^2.8.1",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "framer-motion": "^10.16.4"
-  },
-  "dependencies": {}
+    "react-dom": "^18.2.0"
+  }
 }

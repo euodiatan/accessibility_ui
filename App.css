@@ -1,0 +1,12 @@
+/* Copy and paste these settings into your App.css */
+[data-theme='dark'] {
+  background-color: black;
+  color:white;
+}
+
+.toggle-container{
+  display:flex;
+  justify-content: right;
+}
+
+
