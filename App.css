@@ -1,5 +1,5 @@
 /* Copy and paste these settings into your App.css */
-[data-theme='dark'] {
+[data-theme='dark'] .insertclassyouwantdarkmodetoapplyto {
   background-color: black;
   color:white;
 }

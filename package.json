@@ -1,7 +1,7 @@
 {
   "name": "accessibility_ui",
-  "version": "1.0.3",
-  "description": "Implement a UI customisation page in your React.JS application that uses the ChakraUI framework, to allow your end-users to customise their preference in your app itself! Useful for accessibility features.",
+  "version": "2.0.0",
+  "description": "Accessibility UI is an npm package that gives you, the developer, the power to incorporate accessibility features and end-user customisation into your React web application.",
   "main": "CustomisationPage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

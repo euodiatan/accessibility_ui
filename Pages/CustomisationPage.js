@@ -10,12 +10,12 @@ export default function CustomisationPage() {
 
     //Create functions to handle changing of customisation based on user's toggling.
     const toggleButtonSize = () => {
-        const newSize = buttonSize === '2.5rem' ? '3rem' : '2.5rem';
+        const newSize = buttonSize === '1.5rem' ? '2rem' : '1.5rem';
         setButtonSize(newSize);
     };
 
     const toggleFontSize = () => {
-        const newSize = fontSize === '3rem' ? '4rem' : '3rem';
+        const newSize = fontSize === '1.5rem' ? '2rem' : '1.5rem';
         setFontSize(newSize);
     };
 
@@ -64,7 +64,7 @@ export default function CustomisationPage() {
                     <h2 className={styles.headingMd}>Fonts:</h2>
                     <div className={styles.toggleContainer}>
                         <label className={styles.sizeLabel}>L</label>
-                        <input type="checkbox" checked={fontSize === '4rem'} onChange={toggleFontSize} />
+                        <input type="checkbox" checked={fontSize === '2rem'} onChange={toggleFontSize} />
                         <label className={styles.sizeLabel}>XL</label>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default function CustomisationPage() {
                     <h2 className={styles.headingMd}>Buttons:</h2>
                     <div className={styles.toggleContainer}>
                         <label className={styles.sizeLabel}>L</label>
-                        <input type="checkbox" checked={buttonSize === '3rem'} onChange={toggleButtonSize} />
+                        <input type="checkbox" checked={buttonSize === '2rem'} onChange={toggleButtonSize} />
                         <label className={styles.sizeLabel}>XL</label>
                     </div>
                 </div>

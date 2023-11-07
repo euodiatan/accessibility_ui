@@ -6,8 +6,8 @@ export const CustomisationProvider = ({ children }) => {
   // These state variables will store customisation settings like button size, font size, etc.
    // If you want to add more customisable elements, define their state variables below this comment. Update this!
    
-  const [buttonSize, setButtonSize] = useState(localStorage.getItem('buttonSize') || '2.5rem');
-  const [fontSize, setFontSize] = useState(localStorage.getItem('fontSize') || '3rem');
+  const [buttonSize, setButtonSize] = useState(localStorage.getItem('buttonSize') || '1.5rem');
+  const [fontSize, setFontSize] = useState(localStorage.getItem('fontSize') || '1.5rem');
   const [fontColor, setFontColor] = useState(localStorage.getItem('fontColor') || '#EDF2F7');
   const [buttonColor, setButtonColor] = useState(localStorage.getItem('buttonColor') || '#005C2B');
   const [colorMode, setColorMode] = useState(localStorage.getItem('colorMode') || 'dark');
